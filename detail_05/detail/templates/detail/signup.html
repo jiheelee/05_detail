@@ -1,0 +1,38 @@
+{% extends 'detail/base.html' %}
+{% load static %}
+{% block bb %}
+    <div style="height:150px;"></div>
+    <div class="container">
+        <div class="row">
+            
+        <div class="col">
+            <img src="{% static '/a.jpg' %}" style="width:300px;height:300px;"></img>
+        </div>
+        <div class="col">
+            <h1 class="p-4">Sign Up</h1>
+            <br>
+            <form>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" >
+              </div>
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="email" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Name" >
+              </div>
+              
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="password" placeholder="Password">
+              </div>
+              <div class="form-group">
+                <label for="password2">Password Confirmation</label>
+                <input type="password" class="form-control" id="password2" placeholder="Password Confirmation">
+              </div>
+              <br>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+        </div>
+    </div>
+{% endblock %}

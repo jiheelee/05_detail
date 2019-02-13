@@ -1,0 +1,22 @@
+{% extends 'detail/base.html' %}
+{% block bb %}
+
+
+    <header style="height:350px;width:100%;background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaNIw4m90LE8uAyP0K4kdi2I3Dyb-1f20lLWpU3J_nm2Mb36zw');background-size:100% 100%;">
+        <div class="row vertical-align" style="height:350px; align-items:center;">
+            <h1 class="mx-auto">header</h1>
+        </div>
+        
+        
+    </header>
+    <div style="height:1000px;"></div>
+    <footer style="height:50px;width:100%;">
+        <div class="d-flex p-2 justify-content-between">
+            <p>Jenntimes</p>
+            <a style="display:scroll; bottom:10px; right:20px;" href="{% url 'details:mysite'%}" title=Top>
+                <p style="background:#F66; color:#fff;">Go to top</p>
+            </a>
+        </div>
+    </footer>
+
+{% endblock %}
